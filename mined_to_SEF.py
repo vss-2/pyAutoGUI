@@ -11,7 +11,7 @@ def dirAtual():
 
 def preenche(dadoPreenchido):
     dP = str(dadoPreenchido)
-    if(dP[len(dP-1)] == ','):
+    if(dP[len(dP)-1] == ','):
         dP = dP+'0'
     print(dP)
     for i in range(len(str(dP))):
@@ -75,8 +75,8 @@ def preencherSEF(arqPath, arq):
         val18 = dado[10]
         data  = dado[11]
         automatizado(serie, nfcid, nome, ender, bairr, cep, cidad, estad, cnpfj, valbt, val18, data)
-        # os.call(['rm', arq])
-        # os.call(['del', arq], shell=True)
+        # call(['rm', arq])
+        call(['del', arq], shell=True)
     return
 
 if __name__ == "__main__":
