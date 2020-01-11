@@ -12,7 +12,7 @@ def resetEstado():
 
 def preenche(dadoPreenchido):
     dP = str(dadoPreenchido)
-    if(dP[len(dP-1)] == ','):
+    if(dP[len(dP)-1] == ','):
         dP = dP+'0'
     print(dP)
     for i in range(len(str(dP))):
